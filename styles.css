@@ -36,4 +36,59 @@
     display: flex;
     gap: 20px;
 }
-.
+
+.header-bottom{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+.profile-display{
+    display: flex;
+    gap: 20px;
+}
+.bot-buttons{
+    display: flex;
+    gap: 30px;
+}
+
+/* MAIN */
+    /* projects */
+.projects{
+    border: 1px solid black;
+    margin: 20px 0;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.card{
+    border: 1px solid black;
+}
+
+
+    /* announcements */
+.ann-container{
+    display: flex;
+    flex-direction: column;
+}
+.block{
+    border: 1px solid green;
+}
+
+    /* trending */
+.trending > .container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.account{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border: 1px solid red;
+}
+.acc-words{
+    display: flex;
+    flex-direction: column;
+}
