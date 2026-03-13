@@ -1,6 +1,8 @@
 :root{
     --color-blue: rgb(1, 157, 241);
-    --color-grey: rgb(232, 231, 231);
+    --color-grey: rgb(229, 237, 239);
+    --color-text-grey: rgb(90, 90, 90);
+    --color-line-grey: rgb(198, 198, 198);
 }
 * {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -42,7 +44,7 @@ img{
     align-items: center;
     gap: 10px;
     padding-left: 12px;
-    font-weight: bold;
+    font-weight: 600;
 }
 .nav-main,
 .nav-misc{
@@ -132,20 +134,17 @@ img{
 }
     /* projects */
 .projects{
-    border: 1px solid black;
     grid-area: projects;
+}
 .main-titles{
     font-weight: 600;
     font-size: 18px;
     margin-bottom: 10px;
 }
-}
 .card-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
-    /* can remove later */
-
 }
 .card{
     border: 1px solid black;
@@ -157,9 +156,19 @@ img{
     padding: 20px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     position: relative;
+    font-size: 18px;
 }
-.card > p{
+.card > p,
+.block > p{
     margin: 0;
+    margin-bottom: 3px;
+}
+.title + p{
+    color: var(--color-text-grey);
+    font-size: 0.9em;
+}
+.title{
+    font-weight: 600;
 }
 .card-icons{
     display: flex;
@@ -181,10 +190,20 @@ img{
 .ann-container{
     display: flex;
     flex-direction: column;
+    background-color: white;
+    padding: 8px 20px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .block{
-    border: 1px solid green;
+    font-size: 14px;
+    padding: 12px 4px;
 }
+.midblock{
+    border-top: 1px solid var(--color-line-grey);
+    border-bottom: 1px solid var(--color-line-grey);
+}
+
 
     /* trending */
 .trending{
