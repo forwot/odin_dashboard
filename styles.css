@@ -15,7 +15,7 @@ body{
 .base-container{
     height: 100vh;
     display: grid;
-    grid-template: 1fr 7fr / minmax(235px, 1fr) 4fr;
+    grid-template: 1fr 7fr / minmax(255px, 1fr) 5fr;
     grid-template-areas: 
     "sidebar header"
     "sidebar main";
@@ -36,21 +36,22 @@ body{
     width: 50px;
 }
 img{
-    width: 18px;
+    width: 24px;
 }
 .nav-main > div,
 .nav-misc > div{
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
     padding-left: 12px;
-    font-weight: 600;
+    font-weight: 550;
+    font-size: 18px;
 }
 .nav-main,
 .nav-misc{
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
 }
 .dashboard-icon{
     display: flex;
@@ -89,12 +90,17 @@ img{
 .top-icons{
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 25px;
 }
-.top-icons > img{
-    width: 25px;
+#bell{
+    width: 20px;
+}
+.top-icons > .pfp{
+    width: 30px;
+    border-radius: 50%;
 }
 
+    /* HEADER BOTTOM */
 .header-bottom{
     display: flex;
     justify-content: space-between;
@@ -105,14 +111,19 @@ img{
     align-items: center;
     gap: 20px;
 }
+.profile-display .pfp{
+    width: 70px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
 .bot-buttons{
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 25px;
 }
 .bot-buttons > button{
     width: 85px;
-    height: 30px;
+    height: 32px;
     background-color: var(--color-blue);
     color: white;
     border: none;
@@ -212,15 +223,27 @@ img{
 .trending > .container{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 8px;
+
 }
 .account{
     display: flex;
-    gap: 10px;
+    gap: 16px;
     align-items: center;
-    border: 1px solid red;
 }
 .acc-words{
     display: flex;
     flex-direction: column;
+    gap: 3px;
+}
+.desc{
+    color: var(--color-text-grey);
+}
+.trending .pfp{
+    width: 50px;
+    border-radius: 50%;
 }
